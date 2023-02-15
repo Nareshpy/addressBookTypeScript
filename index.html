@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AddressBook</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- <script src="jQuery.js"></script> -->
+  <!-- <script>var exports = {};</script> -->
+  <script src="functions.js"></script>
+  <script src="interface.js"></script>
+  <script src="rendering.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Address Book</h1>
+  </header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item activePage" id="home">
+          <a class="nav-link" href="" target="_self">HOME</a>
+        </li>
+        <li class="nav-item">
+          <button id="addBtn">+ADD</button>
+        </li>
+      </ul>
+    </div>
+    <img src="blog-icon.png" alt="picture" id="icon">
+  </nav>
+  <h6>CONTACTS</h6>
+  <div id="contacts-display">
+    <div id="contact-list" class="allContacts">
+    </div>
+    <div id="formpage-container">
+      <form id="formpage">
+        <label for="name">Name<span class="mandatory" id="blankName">*</span></label>
+        <input type="text" id="name" class="form-control" value="" name="name">
+        <label for="mail">Email<span class="mandatory" id="blankMail">*</span></label>
+        <input type="email" id="mail" class="form-control" value="" name="mail">
+        <div class="row">
+          <div class="col-5">
+            <label for="mobile">Mobile</label>
+          </div>
+          <div class="col-5">
+            <label for="landline">Landline</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <input type="text" id="mobile" class="form-control" value="" name="mobile">
+          </div>
+          <div class="col-5">
+            <input type="text" id="landline" class="form-control" value="" name="landline">
+          </div>
+        </div>
+        <label for="website">website</label>
+        <input type="text" id="website" class="form-control" value="" name="website">
+        <label for="address">Address</label>
+        <textarea type="text" id="address" class="form-control" value="" name="address"></textarea>
+        <div class="row">
+          <div class="col-10"></div>
+          <div class="col-2"><input type="button" id="subButton" value="Add" class="addingBtn"></div>
+        </div>
+      </form>
+    </div>
+    <div class="contactInfo">
+      <div class="nameBar">
+        <h1 id="detailedName"></h1>
+        <div class="center">
+          <div class="modifyBar">
+            <div class="modify" id="edit">
+              <img class="editSymbol" src="edit1.jpg">
+              <a class="btn">EDIT</a>
+            </div>
+            <div class="modify" id="delete">
+              <img class="deleteSymbol" src="delete2.png">
+              <a class="btn">DELETE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="sameline content">
+          <p>Email:</p>&nbsp;
+          <pre id="detailedEmail"></pre>
+        </div>
+        <div class="sameline content">
+          <p>Mobile:</p>&nbsp;
+          <pre id="detailedMobile"></pre>
+        </div>
+        <div class="sameline">
+          <p>Landline:</p>&nbsp;
+          <pre id="detailedLandline"></pre>
+        </div>
+        <div class="sameline content">
+          <p>Website:</p>&nbsp;
+          <pre id="detailedWebsite"></pre>
+        </div>
+        <div class="sameline content">
+          <p>Address:</p>&nbsp;
+          <pre id="detailedAddress"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

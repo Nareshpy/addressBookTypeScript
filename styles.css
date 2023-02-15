@@ -1,0 +1,139 @@
+header {
+    background-color: #3399cc;
+    padding: 25px;
+}
+.activePage{
+    background-color: #f89502;
+    border-color: white;
+    color: black;
+    font-weight: bolder;
+}
+.nav-link{
+    padding:8px 12px 4px 15px;
+    border-width: 0px 0px 0px 5px;
+    border-style: solid;
+    border-color: #333333;
+    color:black;
+}
+#addBtn {
+    background-color:transparent;
+    color: white;
+    margin-top: 2%;
+    margin-left: 10%;
+    height: 35px;
+}
+.nav-link:hover,#addBtn:hover{
+    background-color: #f89502;
+    border-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+h6 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-block-start: 2%;
+    padding-left:3%;
+}
+#icon {
+    margin-right: 2%;
+}
+#contacts-display {
+    display: flex;
+    padding: 20px;
+    color: rgb(83, 83, 83);
+    text-shadow: 0px 0px 1px;
+}
+.allContacts {
+    width: 420px;
+}
+.singleContact {
+    border-width: 0.5px;
+    border-color: #d0d0d0;
+    border-style: solid;
+    padding: 5px 10px;
+}
+.singleContact:hover {
+    background-color: #cee7f2;
+    cursor: pointer;
+}
+.contactInfo {
+    margin: 20px 90px;
+    width: 540px;
+    display: none;
+}
+.nameBar {
+    display: flex;
+    justify-content: space-between;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.modifyBar {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.modify {
+    display: flex;
+}
+.modify:hover {
+    cursor: pointer;
+}
+.btn {
+    margin-left: 5px;
+}
+.editSymbol {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+}
+.deleteSymbol {
+    width: 20px;
+    height: 25px;
+    margin: auto;
+}
+.sameline {
+    display: flex;
+    font-size: 17px;
+}
+.content {
+    margin-top: 15px;
+}
+#formpage-container {
+    width: 750px;
+    height: 590px;
+    margin: 0px 65px;
+    box-shadow: 0px 0px 25px;
+    padding: 5px;
+    display: none;
+}
+#formpage {
+    display: none;
+    padding-top: 20px;
+}
+input {
+    border-radius: 0px;
+    height: 45px;
+    border-color: #919191;
+    border-width: 2px;
+    font-size: 20px;
+    border-style: solid;
+    width: 100%;
+    padding-left: 20px;
+}
+#address {
+    height: 110px;
+    resize: none;
+}
+#subButton {
+    margin-top: 20%;
+    width: 70px;
+    color: rgb(34, 44, 194);
+    background-color: rgb(42, 168, 42);
+}
+.mandatory{
+    color: red;
+}
